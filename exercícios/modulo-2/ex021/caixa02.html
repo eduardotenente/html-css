@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    Grouping Tags / Box-Shadow / Borda Arredondada
+    </title>
+    <!-- Aula 4 / Aula 5 / Aula 6 -->
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(92, 92, 92);
+            padding: 3px;
+            box-shadow: 6px 3px 6px 1px rgba(0, 0, 0, 0.445);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 2px 2px 6px 0px black;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(163, 162, 162);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        .retorno{
+            color: rgb(208, 211, 214);
+            text-decoration: none;
+            margin-left: 10px;
+            padding-left: 1px;
+            font-weight: bold;
+        }
+
+        .retorno:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Menu</a>
+            <a href="#">Home</a>
+            <a href="#">Conta</a>
+            <a href="#">Parcerias</a>
+            <a href="#">Créditos</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>    
+
+        <section id="noticias">
+            <article>
+                <h2>Notícia do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cupiditate voluptatum blanditiis ab inventore adipisci deserunt consectetur fuga quae laudantium. Est magnam nemo cum optio eos error consequuntur vero recusandae!</p>
+                <aside>
+                    Artigo escrito por José da Silva
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>    
+    </main>
+    <footer>
+        <p>Desenvolvido por Eduardo</p>
+    </footer>
+
+    <a href="./caixa01.html" target="_self" rel="prev" class="retorno">Retornar</a>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        mark {
+            background-color: rgb(226, 56, 56);
+        }
+    </style>
+    <title>Práticando Formatação</title>
+</head>
+<body>
+    <h1>Texto Exemplo</h1>
+    <h2>DELETADO E INSERIDO</h2>
+    <p><ins>Atenção</ins>: Cuidado, cachorro raivoso no local.</p>
+    <p><del>Configurações Descartadas</del>: não faça barulho</p>
+
+    <h2>SOBRESCRITO E SUBESCRITO</h2>
+    <p>Qual a solução da equação x<sup>2</sup>-2 = 10 ?</p>
+    <p>Em que estado se encontra o elemento H<sub>2</sub>O após o processo de ebulição? </p>
+    
+    <h2>Texto Marcado</h2>
+    <p>Cuidado com os <mark>pecados</mark>, eles vão te arrastar diretamente ao terrível <mark>sofrimento eterno</mark>.</p>
+    <!--Para deixar todas as marcações com cores iguais, diferentes das originais(amarelo), é necessário usar STYLE em <head>, observe:
+        <style> 
+            mark {
+                background-color: limegreen;
+            }
+        </style>        
+        -->
+
+    <h2>Texto em NEGRITO E ITÁLICO</h2>
+    <p><strong>ELE</strong> é perigoso, fique atento!</p>
+    <p>Dobre a massa e depois cozinhe <em>beeem lentamente</em>.</p>
+
+    <h2>TEXTO GRANDE E PEQUENO</h2>
+    <p>Um monstro bem <big>grande</big> está a caminho!</p>
+    <p>Se esconda, aproveite que você é <small>pequeno</small>.</p>
+    
+    <h2>ABREVIAÇÔES</h2>
+    <p>Adoro <abbr title="Vinland Saga">VS</abbr>, é o meu mangá favorito!</p>
+    
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">leia ao contrário.</bdo></p>
+    <p><bdo dir="ltr">Este texto está normal, diferente do texto acima, que está ao contrário.</bdo></p>
+
+    <h2>Código-fonte /Pré-formatado </h2>
+    <pre>
+        <code>
+            console: (input JavaScript).js
+        </code>
+    </pre>
+<!--Desloque o código para esquerda com TAB e para com SHIFT + TAB-->
+
+    <h2>Citações Simples e Completas</h2>
+    <h3>Simples</h3>
+    <p>Sou como Thorfinn, que uma vez disse:<q> Eu não tenho inimigos.</q> </p>
+    <h3>Completas</h3>
+    <p>Como Ippo Makunouchi havia dito naquele episódio:</p>
+    <blockquote cite="https://slimeread.com/manga/3515/hajime-no-ippo">
+        Eu quero saber como é ser forte.
+    </blockquote>
+
+
+</body>
+</html>

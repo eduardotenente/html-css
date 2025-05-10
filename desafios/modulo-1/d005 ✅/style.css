@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body{
+    background-color: dimgray;
+}
+
+h1{
+    text-align: center;
+    color: hotpink;
+}
+h2{
+    text-align: center;
+    color: hotpink;
+}
+p{
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+ul{
+    color: rgb(255, 255, 255);
+}
+a{
+    color: hotpink;
+}

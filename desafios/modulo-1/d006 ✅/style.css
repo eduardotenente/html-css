@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(37, 37, 37);
+}
+h1{
+    color: orange;
+    text-align: justify;
+}
+p{
+    color: beige;
+}
+ul{
+    color: beige;
+}
