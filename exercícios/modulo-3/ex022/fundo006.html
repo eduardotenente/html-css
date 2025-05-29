@@ -7,16 +7,26 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/imagens-cap19/wallpaper002.jpg);
             background-position: center top;
-            background-repeat: repeat;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;*/
+
+
+            /* Shorthand - background 
+            color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('imagens/imagens-cap19/wallpaper002.jpg') center top no-repeat fixed;
             background-size: cover;
         }
 
+
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
