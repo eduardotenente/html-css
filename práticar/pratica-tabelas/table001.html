@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section{
+            position: relative;
+        }
+
+        h1{
+            position: absolute;
+            left: 44%;
+        }
+
+        table{
+            position: absolute;
+            border-collapse: collapse;
+            width: 300px;
+            height: 150px;
+            left: 50%;
+            transform: translate(-50%, 70%);
+        }
+
+        tr{
+            text-align: center;
+        }
+
+        tr#titulos{
+            font-weight: bold;
+        }
+
+        tr.italico{
+            font-style: italic;
+
+        }
+
+        td{
+            border: 1px solid black;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Dados Coletados</h1>
+        <table>
+            <tr id="titulos">
+                <td>NOME</td>
+                <td>IDADE</td>
+                <td>SEXO</td>
+            </tr>
+            <tr class="italico">
+                <td>Eduardo</td>
+                <td>18</td>
+                <td>Masculino</td>
+            </tr>
+            <tr class="italico">
+                <td>Lucas</td>
+                <td>15</td>
+                <td>Masculino</td>
+            </tr>
+            <tr class="italico">
+                <td>Pedro</td>
+                <td>19</td>
+                <td>Masculino</td>
+            </tr>
+            <tr class="italico">
+                <td>Júlia</td>
+                <td>16</td>
+                <td>Feminino</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
