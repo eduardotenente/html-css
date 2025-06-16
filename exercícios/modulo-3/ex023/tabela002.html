@@ -14,15 +14,6 @@
             border-collapse: collapse;
         }
 
-        td, th{
-            border: 1px solid black;
-            padding: 10px;
-        }
-
-        td.num{
-            text-align: right;
-        }
-
         caption{
             font-size: 1.5em;
             font-weight: bold;
@@ -34,6 +25,24 @@
             background-color: gray;
             color: white;
         }
+
+        tbody > tr:nth-child(odd){ /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody >  tr:nth-child(even){ /* 2n */
+            background-color: lightgray;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
