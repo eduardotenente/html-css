@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        thead{
+            background-color: darkgray;
+        }
+
+        tr{
+            font-size: 1.2em;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
+        th, td{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        th#space{
+            padding: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Ônibus Disponíveis</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th id="space">Tabela</th>
+                <th scope="col">Hora da saída</th>
+                <th scope="col">Hora da chegada</th>
+                <th scope="col">Classe do ônibus</th>
+                <th scope="col">Tarifa normal</th>
+                <th scope="col">Frequência</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Cidade A</th>
+                <td>06:00</td>
+                <td>14:00</td>
+                <td>Convencional</td>
+                <td>20,00</td>
+                <td>Diária</td>
+            </tr>
+            <tr>
+                <th scope="row">Cidade B</th>
+                <td>12:00</td>
+                <td>15:00</td>
+                <td>Convencional</td>
+                <td>10,00</td>
+                <td>Domingos</td>
+            </tr>
+            <tr>
+                <th scope="row">Cidade C</th>
+                <td>14:00</td>
+                <td>17:00</td>
+                <td>Leito</td>
+                <td>15,00</td>
+                <td>Diária</td>
+            </tr>
+            <tr>
+                <th scope="row">Cidade D</th>
+                <td>16:00</td>
+                <td>17:00</td>
+                <td>Convencional</td>
+                <td>10,00</td>
+                <td>Diária</td>
+            </tr>
+            <tr>
+                <th scope="row">Cidade E</th>
+                <td>18:30</td>
+                <td>20::00</td>
+                <td>Executivo</td>
+                <td>30,00</td>
+                <td>Domingos</td>
+            </tr>
+            <tr>
+                <th scope="row">Cidade F</th>
+                <td>20:00</td>
+                <td>23:00</td>
+                <td>Convencional</td>
+                <td>80,00</td>
+                <td>Sábados</td>
+            </tr>
+            <tr>
+                <th scope="row">Cidade G</th>
+                <td>21:00</td>
+                <td>23:30</td>
+                <td>Convencional</td>
+                <td>26,00</td>
+                <td>Diária</td>
+            </tr>
+            <tr>
+                <th scope="row">Cidade H</th>
+                <td>22:00</td>
+                <td>23:00</td>
+                <td>Executivo</td>
+                <td>16,00</td>
+                <td>Diária</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
