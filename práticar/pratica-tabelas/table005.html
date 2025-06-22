@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colunas Personalizadas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            margin: auto;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            font-style: italic;
+        }
+        
+        td,th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 9px;
+        }
+
+        col.nome{
+            background-color: aqua;
+        }
+
+        col.sexo{
+            background-image: linear-gradient(to right, #0FDAE0, #468C8F);
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="idade">
+            <col class="sexo">
+        </colgroup>
+
+        <caption>
+            Informações
+        </caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>17</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Guilherme</td>
+            <td>24</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Luíza</td>
+            <td>21</td>
+            <td>Feminino</td>
+        </tr>
+    </table>
+</body>
+</html>
