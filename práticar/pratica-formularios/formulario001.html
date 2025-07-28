@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            background-color: white;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            min-height: 300px;
+            min-width: 250px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+        }
+
+        article{
+            margin-top: 20px;
+        }
+
+
+        p{
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        p#criar {
+            margin-top: 50px;
+            font-size: 16px;
+        }
+
+        input{
+            background-color: lightgray;
+            margin-top: 15px;
+            padding: 3px;
+            border: none;
+        }
+
+        input#i-entrar{
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            padding: 10px 30px;
+            margin-top: 30px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.226);
+        }
+
+        input#i-entrar:hover {
+            background-color:darkred;
+            transform: translate(-5%, -5%);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.589);
+            transition: 0.6s;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Login</h1>
+        <article>
+            <form action="cadastro.php" autocomplete="off">
+                <p>
+                    <label for="i-nome">Nome:</label> <input type="text" name="nome" id="i-nome"></input>
+                </p>
+                <p>
+                    <label for="i-senha">Senha:</label> <input type="password" name="senha" id="i-senha">
+                </p>
+                <input type="submit" value="Entrar" id="i-entrar">
+            </form>
+
+            <p id="criar">
+                Não tem uma conta? <a href="#">Crie uma agora!</a>
+            </p>
+        </article>
+    </main>
+</body>
+</html>
