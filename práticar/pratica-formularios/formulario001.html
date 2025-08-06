@@ -56,7 +56,7 @@
             border: none;
         }
 
-        input#i-entrar{
+        input.i-entrar{
             background-color: green;
             color: white;
             font-weight: bold;
@@ -65,7 +65,7 @@
             box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.226);
         }
 
-        input#i-entrar:hover {
+        input.i-entrar:hover {
             background-color:darkred;
             transform: translate(-5%, -5%);
             box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.589);
@@ -93,7 +93,11 @@
                 <p>
                     <label for="i-senha">Senha:</label> <input type="password" name="senha" id="i-senha" minlength="8" maxlength="20" placeholder="Senha" size="15" autocomplete="current-password" required>
                 </p>
-                <input type="submit" value="Entrar" id="i-entrar">
+
+                <p>
+                    <input type="submit" value="Entrar" class="i-entrar">
+                    <input type="reset" value="Limpar" class="i-entrar">
+                </p>
             </form>
 
             <p id="criar">
