@@ -33,7 +33,7 @@ fieldset {
     padding: 20px;
 }
 
-fieldset#DP {
+fieldset.DP {
     text-align: justify;
 }
 
@@ -47,7 +47,7 @@ input {
     padding: 3px;
 }
 
-fieldset#DP > input {
+fieldset.DP > input {
     margin-bottom: 10px;
 }
 
