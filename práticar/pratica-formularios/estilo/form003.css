@@ -72,6 +72,10 @@ label {
     font-weight: bold;
 }
 
+p {
+    margin-bottom: 10px;
+}
+
 a {
     color: rgb(14, 59, 44);
     text-decoration: none;
