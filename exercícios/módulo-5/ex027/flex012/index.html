@@ -15,22 +15,28 @@
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 200px;
+            
         }
 
         div#cxA {
-            flex-shrink: 0;
+            /*flex-shrink: 0;
             flex-grow: 1;
+            flex-basis: 200px;*/
+            flex: 1 0 200px;
         }
 
         div#cxB {
-            flex-shrink: 2;
+            /*flex-shrink: 2;
             flex-grow: 2;
+            flex-basis: 200px;*/
+            flex: 2 2 150px;
         }
 
-        dic#cxC {
-            flex-shrink: 1;
+        div#cxC {
+            /*flex-shrink: 0;
             flex-grow: 1;
+            flex-basis: 200px;*/
+            flex: auto;
         }
     </style>
 </head>
