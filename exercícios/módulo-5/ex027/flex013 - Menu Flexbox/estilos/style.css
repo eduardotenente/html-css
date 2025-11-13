@@ -18,26 +18,33 @@ header {
     background-color: gray;
     color: white;
     padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
 header > h1 {
-    display: flex;
-    justify-content: flex-start;
     border: 1px dotted black;
 }
 
 header > nav {
     display: flex;
-    justify-content: flex-end;
+    flex-flow: row nowrap;
     border: 1px dotted black;
 }
 
 header > nav > a {
     background-color: black;
     color: white;
+    flex: auto;
     text-decoration: none;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
+}
+
+header > nav > a:hover {
+    background-color: lightgray;
+    transition-duration: .3s;
 }
 
 main {

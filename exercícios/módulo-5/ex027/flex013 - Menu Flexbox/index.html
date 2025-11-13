@@ -6,9 +6,26 @@
     <link rel="stylesheet" href="estilos/style.css">
     <title>Menu Flexbox</title>
     <style>
-        @media screen and (min-width: 300px) and (max-width: 620) {
-            
+        @media screen and (min-width: 481px) and (max-width: 767px) {
+
+        header {
+            flex-flow: column nowrap;
+            text-align: center;
         }
+
+        header > nav {
+            display: flex;
+            flex-flow: column-reverse wrap;
+            align-content: stretch;
+            justify-content: center;
+        }
+
+        header > nav > a {
+            flex: auto;
+            padding: 10px;
+            margin: 5px;
+        }
+}
     </style>
 </head>
 <body>
