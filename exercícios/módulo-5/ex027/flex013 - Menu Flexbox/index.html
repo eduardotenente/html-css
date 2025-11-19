@@ -4,35 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <title>Menu Flexbox</title>
-    <style>
-        @media screen and (min-width: 481px) and (max-width: 767px) {
-
-        header {
-            flex-flow: column nowrap;
-            text-align: center;
-            align-items: none;
-        }
-
-        header > h1 {
-            flex: none;
-        }
-
-        header > nav {
-            display: flex;
-            flex-flow: column wrap;
-            align-content: stretch;
-            justify-content: center;
-        }
-
-        header > nav > a {
-            flex: auto;
-            padding: 10px;
-            margin: 5px;
-            width: 95vw;
-        }
-}
-    </style>
 </head>
 <body>
     <header>
