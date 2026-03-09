@@ -9,7 +9,7 @@ body {
 }
 
 .navbar {
-    background-color: white;
+    background-color: cornflowerblue;
     height: 100px;
     display: flex;
     flex-flow: row wrap;
@@ -40,12 +40,14 @@ body {
     text-decoration: none;
     font-size: 20px;
     padding: 20px 16px;
+    transition: .2s;
 }
 
 .menu a:hover {
     color: #FF2978;
     border-top: 4px solid #180F4A;
     border-radius: 3px;
+    transition: .2s;
 }
 
 #botao {
