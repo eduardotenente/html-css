@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo/form003.css">
+    <title>Informações</title>
+</head>
+<body>
+    <header>
+        <h1>Informações</h1>
+    </header>
+
+    <form action="../cadastro.php" method="post" autocomplete="on">
+
+        <fieldset class="DP">
+            <legend>Dados Pessoais</legend>
+
+            <label for="icpf">Nome</label>
+            <input type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome Completo">
+            <br>
+            
+            <label for="icpf">CPF</label>
+            <input type="number" name="cpf" id="icpf" required placeholder="CPF">
+            <br>
+            
+            <label for="idata">Data de Nascimento</label>
+            <input type="date" name="data" id="idata" required autocomplete="bday-day">
+            <br>
+            
+            <label for="iidade">Idade:</label>
+            <input type="number" name="idade" id="iidade" min="0" max="150" required>
+        </fieldset>
+
+        <fieldset class="DP">
+            <legend>Localização</legend>
+
+            <div>
+                <label for="ipais">País: </label>
+                <select name="país" id="ipais">
+                    <optgroup label="Ámerica do Sul">
+                        <option value="BR" selected>Brasil</option>
+                        <option value="VZ">Venezuela</option>
+                        <option value="AG">Argentina</option>
+                        <option value="BO">Bolívia</option>
+                    </optgroup>
+                    <optgroup label="Ámerica Central">
+                        <option value="ME">México</option>
+                        <option value="CB">Cuba</option>
+                    </optgroup>
+                    <optgroup label="Ámerica do Norte">
+                        <option value="EUA">Estados Unidos</option>
+                        <option value="CN">Canadá</option>
+                        <option value="AL">Alaska</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="FR">França</option>
+                        <option value="ES">Espanha</option>
+                        <option value="IG">Inglaterra</option>
+                        <option value="AM">Alemanha</option>
+                        <option value="PT">Portugal</option>
+                    </optgroup>
+                    <optgroup label="Ásia">
+                        <option value="IN">Índia</option>
+                        <option value="CH">China</option>
+                        <option value="RU">Rússia</option>
+                    </optgroup>
+                    <optgroup label="África">
+                        <option value="AS">África do Sul</option>
+                        <option value="AG">Angola</option>
+                        <option value="EG">Egito</option>
+                    </optgroup>
+                    <optgroup label="Oceania">
+                        <option value="JP">Japão</option>
+                        <option value="TW">Taiwan</option>
+                        <option value="AU">Austrália</option>
+                    </optgroup>
+                </select>
+            </div>
+            
+            <div>
+                <label for="iest">Estado: </label>
+                <input type="text" name="Estado" id="iest" list="iestlist">
+                <datalist id="iestlist">
+                    <option>Rio de Janeiro</option>
+                    <option>São Paulo</option>
+                    <option>Rio Grande do Sul</option>
+                    <option>Distrito Federal</option>
+                    <option>Maranhão</option>
+                    <option>Bahia</option>
+                </datalist>
+            </div>
+        </fieldset>
+
+        <fieldset class="DP">
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="isxmas">
+            <label for="isxmas">Masculino</label>
+            <br>
+    
+            <input type="radio" name="sexo" id="isxfem">
+            <label for="isxfem">Feminino</label>
+
+        </fieldset>
+
+        <fieldset class="DP">
+
+            <legend>Foto</legend>
+            <label for="ifile">Foto do Rosto</label>
+            <input type="file" name="Foto" id="ifile">
+            
+        </fieldset>
+
+            <fieldset class="DP">
+                <legend>Contato</legend>
+
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required min="4" max="15" autocomplete="tel-national" placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-{4}$">
+                <br>
+
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="Email para contato">
+            </fieldset>
+
+            <fieldset class="DP">
+                <legend>Avaliação do Site</legend>
+                <p>Avalie sua experiência no site!</p>
+
+                <label for="istf">Satisfação:</label>
+                <input type="range" name="stf" id="istf" max="5" value="1">
+
+                <div>
+                    <label for="imsg">Escreva uma mensagem para nós!</label> 
+                    <br>
+                    <textarea name="msg" id="imsg" cols="40" rows="8"></textarea>
+                </div>
+            </fieldset>
+
+        <input type="submit" value="Enviar" class="botao">
+        <input type="reset" value="Limpar" class="botao">
+    </form>
+</body>
+</html>

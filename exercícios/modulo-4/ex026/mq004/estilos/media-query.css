@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* Versão para as demais */
+
+/* Typical Device Breakpoints
+Pequenas Telas: até 575px
+
+Celular: 576px até 767px
+   PORTRAIT (320px - 575px) / LANDSCAPE (576px - 767px) 
+
+Tablet: 768px até 1024px
+   PORTRAIT (768px - 991px) / LANDSCAPE (769px - 1024px)
+
+Desktop: 1025px até 1200px
+
+Grandes Telas: 1200px e acima
+*/
+
+@media print { /* IMPRESSORA */
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg); 
+    /* Não é necessário, pois não imprime o background */
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Esta impressão foi feita através do site www.edubr.com';
+        text-decoration: underline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#impressora { display: block; }
+    img#pc { display: none; }
+    img#TV { display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {  /* TABLETS */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main {
+        width: 500px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#impressora { display: none; }
+    img#pc { display: none; }
+    img#TV { display: none; }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) { /* DESKTOP */
+    body { 
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 600px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#impressora { display: none; }
+    img#pc { display: block; }
+    img#TV { display: none; }
+}
+
+@media screen and (min-width: 1200px) { /* GRANDES TELAS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#impressora { display: none; }
+    img#pc { display: none; }
+    img#TV { display: block; }
+}

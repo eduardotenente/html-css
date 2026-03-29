@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to top, rgba(0, 0, 255, 0.575), rgba(47, 47, 209, 0.671), rgb(44, 44, 133));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+    font-size: 1.8em;
+}
+
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 300px;
+}
+
+article {
+    display: inline-block;
+}

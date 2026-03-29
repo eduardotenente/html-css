@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Centralizado e Responsivo</title>
+    <style>
+        #container{
+            background-color: rgb(148, 48, 48);
+            background-repeat: no-repeat;
+            background-size: 100%;
+
+            position: relative;
+            height: 90vh;
+        }
+
+        #conteudo{
+            background-image: url(imagens/456ba8ef-4f44-4ec9-b876-e2acf7455b4c.jpeg);
+            background-color: rgb(139, 135, 135);
+            background-size: 100px 100px;
+
+            height: 40vh;
+            width: 400px;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #edu{
+            position: absolute;
+            left: 10%;
+            top: 30%;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+
+        <article id="edu">
+            <p>教</p>
+            <p>育</p>
+        </article>
+    </section>
+</body>
+</html>
