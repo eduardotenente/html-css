@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seta Animada</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10%;
+        }
+        
+        img {
+            animation: is-bouncing 1s ease alternate infinite;
+        }
+
+        @keyframes is-bouncing {
+            to {
+                transform: translateY(30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="imagem/images.png" alt="Seta">
+</body>
+</html>
