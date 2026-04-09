@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hover Button</title>
+</head>
+<body>
+    <h1>Passe o mouse / dedo no botão!</h1>
+    <button id="botao" onclick="clique()">Hover Me</button>
+    <div id="txt"></div>
+
+    <!-- Animação de Botão ao Passar o Mouse
+    Crie uma página com um botão centralizado. Quando o usuário passar o mouse sobre o botão, ele deve aumentar de tamanho suavemente e mudar de cor utilizando apenas CSS. -->
+
+    <script>
+        function clique() {
+            let botão = document.getElementById('botao')
+            let texto = document.getElementById('txt')
+            let img = document.createElement('img')
+            texto.innerHTML = 'Era para passar o mouse / dedo e não para clicar 🙄'
+            img.setAttribute('id','foto')
+            img.setAttribute('src','transferir.jpg')
+            img.appendChild(img)
+        }
+    </script>
+</body>
+</html>

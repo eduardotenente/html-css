@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: sans-serif;
+    background-color: gray;
+    color: white;
+}
+
+button {
+    background-color: darkslategray;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
+    transition: 1s;
+
+    &:hover {
+        background-color: darkgrey;
+        transform: scale(1.2);
+        transition: background-color 1s, transform 1s ease;
+    }
+}
+
+div#txt {
+    margin-top: 5%;
+}
