@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#container {
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+        animation: text-reveal 1s cubic-bezier(0.85, 0, 0.15, 1) forwards;
+        background-color: cornflowerblue;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+h1 {
+    animation: text 1ms 1s forwards;
+    opacity: 0;
+}
+
+@keyframes text-reveal {
+    from {
+        transform: translateX(-101%);
+    }
+    
+    to {
+        transform: translateX(101%);
+    }
+}
+
+@keyframes text {
+    to {
+        opacity: 1;
+    }
+}
