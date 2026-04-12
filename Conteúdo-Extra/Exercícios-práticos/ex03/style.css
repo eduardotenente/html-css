@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* Caixa que se Move na Tela
+Crie uma div em formato de quadrado que se mova da esquerda para a direita automaticamente quando a página for aberta, utilizando @keyframes. */
+
+body {
+    background-color: lightgray;
+    font-family: sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#container {
+    animation: is-moving 4s ease-in-out alternate infinite;
+    text-align: center;
+    font-size: 1.2em;
+    height: 200px;
+}
+
+#res {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+img {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363)
+}
+
+p {
+    cursor: pointer;
+}
+
+@keyframes is-moving {
+    from {
+        transform: translateX(-28vw);
+    }
+
+    to {
+        transform: translateX(28vw);
+    }
+}

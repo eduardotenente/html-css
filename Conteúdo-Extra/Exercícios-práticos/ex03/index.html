@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Caixa em movimento</title>
+</head>
+<body>
+    <div id="container">
+        <img src="transferir.jpg" alt="Cachorro com coração partido" onclick="ajuda()">
+        <p onclick="questao()">Me ajuda paizao 😩</p>
+    </div>
+    <div id="res"></div>
+
+    <script>
+        var texto = document.getElementById('res')
+        function ajuda() {
+            texto.innerHTML = 'Me mande pix baby'
+        }
+        
+        function questao() {
+            texto.innerHTML = 'Exercício de hoje: Crie uma div em formato de quadrado que se mova da esquerda para a direita automaticamente quando a página for aberta, utilizando @keyframes.'
+        }
+    </script>
+</body>
+</html>
